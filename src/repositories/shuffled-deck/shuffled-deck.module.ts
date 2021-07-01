@@ -5,6 +5,6 @@ import { ShuffledDeckRepository } from './shuffled-deck.repository';
 @Module({
   imports: [ConfigModule, HttpModule],
   providers: [ShuffledDeckRepository],
-  exports: [ShuffledDeckRepository]
+  exports: [ShuffledDeckRepository],
 })
 export class ShuffledDeckModule {}

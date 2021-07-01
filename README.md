@@ -1,6 +1,6 @@
 # Blackjack
 
-Blackjack game implementaion
+Blackjack game implementation
 
 ## Installation
 

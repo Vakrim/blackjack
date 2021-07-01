@@ -110,7 +110,9 @@ describe(BlackjackUseCase, () => {
    * bob 7 + 7 + 2 + 3 = 19
    */
   it('bob wins', async () => {
-    getDeckMock.mockResolvedValueOnce(generateDeck(['5', '6', '7', '7', '3', '2', '2', '2', '3']));
+    getDeckMock.mockResolvedValueOnce(
+      generateDeck(['5', '6', '7', '7', '3', '2', '2', '2', '3']),
+    );
 
     let result = await service.executeGame();
 

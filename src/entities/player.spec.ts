@@ -12,7 +12,7 @@ describe(Player, () => {
     expect(player.score).toBe(0);
     expect(player.hasBlackjack()).toBe(false);
     expect(player.hasBusted()).toBe(false);
-  })
+  });
 
   it('has name', () => {
     expect(player.name).toBe('Kamil');

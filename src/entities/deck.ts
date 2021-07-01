@@ -1,4 +1,4 @@
-import { Card } from "./card";
+import { Card } from './card';
 
 export class Deck {
   #cards: Card[];
@@ -12,11 +12,9 @@ export class Deck {
   }
 
   public drawCard() {
-    if(this.#cards.length === 0) {
+    if (this.#cards.length === 0) {
       throw new Error('Deck is empty');
     }
     return this.#cards.shift()!;
   }
 }
-
-
