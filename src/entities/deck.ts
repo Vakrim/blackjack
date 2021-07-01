@@ -7,6 +7,10 @@ export class Deck {
     this.#cards = cards;
   }
 
+  public size() {
+    return this.#cards.length;
+  }
+
   public drawCard() {
     if(this.#cards.length === 0) {
       throw new Error('Deck is empty');

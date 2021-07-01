@@ -1,10 +1,13 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { ConfigModule } from '@nestjs/config';
+import { BlackjackModule } from './domains/blackjack.module';
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [
+    BlackjackModule,
+    ConfigModule.forRoot({
+      envFilePath: process.env.NODE_ENV === 'test' ? 'test.env' : '.env',
+    }),
+  ],
 })
 export class AppModule {}

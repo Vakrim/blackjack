@@ -17,6 +17,10 @@ export class Player {
     return this.#name;
   }
 
+  get hand() {
+    return this.#hand;
+  }
+
   hasBusted() {
     return this.#score > 21;
   }
